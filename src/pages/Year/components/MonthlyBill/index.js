@@ -19,7 +19,7 @@ const MonthlyBill = ({date, billList}) => {
     <div className="monthlyBillForYear">
       <div className="header">
         <div className="dateIcon">
-          <span className="date">{dayjs(date).format('MM')}月</span>
+          <span className="date">{dayjs(date).format('MM')}</span>
         </div>
         <div className="oneLineOverview">
           <div className="pay">

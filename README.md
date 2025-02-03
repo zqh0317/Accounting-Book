@@ -16,13 +16,13 @@
 ## 📈 页面截图 & 使用方法
 
 ### 新增账单
-<img src="https://github.com/user-attachments/assets/e8a75ba3-440e-4879-925c-37176094343c">
+<img src="https://github.com/user-attachments/assets/e2d27726-14b5-4d2f-a9cb-e41c7f1cad13" width="400">
 
 ### 月度账单
-<img src="https://github.com/user-attachments/assets/62316b73-6aca-42be-bf0f-fd7cd53d9707">
+<img src="https://github.com/user-attachments/assets/a0198723-43f7-477b-bbc6-bab1657dcdf1" width="400">
 
 ### 年度账单
-<img src="https://github.com/user-attachments/assets/287cd465-5a17-44fe-9d76-9da23c63e8f8">
+<img src="https://github.com/user-attachments/assets/8675a10d-9a8d-4a83-8d14-597bebb04bbc" width="400">
 
 ### 使用方法
 1️⃣ **新增账单**：点击首页下方tab bar中间的按钮，进入新增账单页面，选择账目类别和记账时间，并输入金额，点击SAVE保存账目  

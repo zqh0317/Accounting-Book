@@ -12,9 +12,12 @@ import enUS from 'antd-mobile/es/locales/en-US'
 const Month = () => {
     //Group data by month
     const billList = useSelector(state => state.bill.billList)
+    console.log('Redux billList:', billList)
     const monthGroup = useMemo(()=>{
         //Use lodash to group monthly data
-        return _.groupBy(billList, (item) => dayjs(item.date).format('YYYY | MM'))
+        const grouped = _.groupBy(billList, (item) => dayjs(item.date).format('YYYY | MM'))
+        console.log('Computed monthGroup:', grouped) 
+        return grouped
     },[billList])
 
     //Control the opening and closing of the time picker popup
@@ -53,6 +56,7 @@ const Month = () => {
     useEffect(() => {
         const nowDate = dayjs().format('YYYY | MM')
         if (monthGroup[nowDate]){
+          console.log('Updating currentMonthList:', monthGroup[nowDate])
             setCurrentMonthList(monthGroup[nowDate])
         }
     },[monthGroup])

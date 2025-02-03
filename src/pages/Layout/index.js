@@ -1,6 +1,6 @@
 import { TabBar } from "antd-mobile"
 import { useEffect } from "react"
-import { Outlet, useNavigate } from "react-router-dom"
+import { Outlet, useNavigate, useLocation } from "react-router-dom"
 import { useDispatch } from 'react-redux'
 import { getBillList } from "@/store/modules/billStore"
 import './index.scss'
@@ -34,8 +34,10 @@ const Layout = () => {
   useEffect(() => {
     dispatch(getBillList())
   }, [dispatch])
-  //Route switch
+  //Route switch and tab bar activation
   const navigate = useNavigate()
+  const location = useLocation()
+  const currentTab = location.pathname
   const switchRoute = (path) =>{
     navigate(path)
   }
@@ -46,7 +48,7 @@ const Layout = () => {
       </div>
       {/* Render the bottom menu bar */}
       <div className="footer">
-        <TabBar onChange={switchRoute}>
+        <TabBar activeKey={currentTab} onChange={switchRoute}>
           {tabs.map(item => (
             <TabBar.Item key={item.key} icon={item.icon} title={item.title} />
           ))}
