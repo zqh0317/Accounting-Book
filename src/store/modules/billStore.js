@@ -28,7 +28,7 @@ const { setBillList, addBill } = billStore.actions
 const getBillList = () => {
   return async (dispatch) => {
     //Asynchronous request
-    const res = await axios.get('http://localhost:8888/ka')
+    const res = await axios.get('https://my-json-server.typicode.com/zqh0317/my_json_data/ka')
     //Trigger synchronous reducer
     dispatch(setBillList(res.data))
   }
@@ -37,7 +37,7 @@ const getBillList = () => {
 const addBillList = (data) => {
   return async (dispatch) => {
     //Asynchronous request
-    const res = await axios.post('http://localhost:8888/ka', data)
+    const res = await axios.post('https://my-json-server.typicode.com/zqh0317/my_json_data/ka', data)
     //Trigger synchronous reducer
     dispatch(addBill(res.data))
   }
