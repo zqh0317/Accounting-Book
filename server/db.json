@@ -298,6 +298,67 @@
       "money": -350,
       "date": "2025-01-08T15:00:00.000Z",
       "useFor": "drinks"
+    },
+    {
+      "id": "30b0",
+      "type": "pay",
+      "money": -200,
+      "useFor": "drinks"
+    },
+    {
+      "id": "d7a9",
+      "type": "pay",
+      "money": -2000,
+      "date": "2025-02-02T15:00:00.000Z",
+      "useFor": "game"
+    },
+    {
+      "id": "00b1",
+      "type": "pay",
+      "money": -500,
+      "date": "2025-02-01T15:00:00.000Z",
+      "useFor": "home"
+    },
+    {
+      "id": "503c",
+      "type": "pay",
+      "money": -3000,
+      "date": "2025-02-03T15:00:00.000Z",
+      "useFor": "community"
+    },
+    {
+      "id": "0cef",
+      "type": "pay",
+      "money": -400,
+      "date": "2025-02-03T15:00:00.000Z",
+      "useFor": "audio"
+    },
+    {
+      "id": "3bfd",
+      "type": "pay",
+      "money": -200,
+      "date": "2025-02-03T15:00:00.000Z",
+      "useFor": "dessert"
+    },
+    {
+      "id": "a0e4",
+      "type": "pay",
+      "money": -1500,
+      "date": "2025-01-31T15:00:00.000Z",
+      "useFor": "taxi"
+    },
+    {
+      "id": "2b00",
+      "type": "pay",
+      "money": -500,
+      "date": "2025-01-31T15:00:00.000Z",
+      "useFor": "bodybuilding"
+    },
+    {
+      "id": "8f4a",
+      "type": "income",
+      "money": 5000,
+      "useFor": "salary"
     }
   ]
 }
