@@ -4,13 +4,14 @@ import './index.scss'
 import classNames from 'classnames'
 import { billListData } from '@/typeList'
 import { useNavigate } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { addBillList } from '@/store/modules/billStore'
 import { useDispatch } from 'react-redux'
 import dayjs from 'dayjs'
 import enUS from 'antd-mobile/es/locales/en-US'
 
-const New = () => {
+const New = () => { 
+
   const navigate = useNavigate()
 
   //Control button switch
@@ -23,9 +24,27 @@ const New = () => {
 
   //Collect type of bill
   const [useFor, setUseFor] = useState('')
-  
   const dispatch = useDispatch()
 
+  useEffect(() => {
+    //define updateViewport function to set the window size the same as mobile
+    const updateViewport = () => {
+      const metaViewport = document.querySelector('meta[name="viewport"]')
+
+      if (window.innerWidth > 768) { 
+        metaViewport?.setAttribute("content", "width=375, initial-scale=1")
+      } else {
+        metaViewport?.setAttribute("content", "width=device-width, initial-scale=1")
+      }
+    }
+
+    updateViewport(); 
+    window.addEventListener("resize", updateViewport)
+
+    return () => {
+      window.removeEventListener("resize", updateViewport)
+    };
+  }, [dispatch]);
   //Save a new bill
   const saveBill = () => {
     //Collect form data

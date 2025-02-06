@@ -1,3 +1,10 @@
+html, body {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
 .keepAccounts {
     $ka-bg-color: #daf2e1;
     $ka-color: #69ae78;
@@ -151,21 +158,24 @@
     .btns {
       position: fixed;
       bottom: 15px;
-      width: 100%;
       text-align: center;
-  
+      width: 375px;  
+      left: 50%;         
+      transform: translateX(-50%); 
       .btn {
       width: 200px;
+      margin: 0 auto; 
       --border-width: 0;
       --background-color: #fafafa;
       --text-color: #616161;
       &:first-child {
-      margin-right: 15px;
+      margin-right: 10px;
       }
       }
       .btn.save {
       --background-color: var(--ka-bg-color);
       --text-color: var(--ka-color);
+
       }
       }
     

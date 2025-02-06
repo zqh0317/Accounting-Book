@@ -32,8 +32,27 @@ const tabs = [
 const Layout = () => {
   const dispatch = useDispatch()
   useEffect(() => {
-    dispatch(getBillList())
-  }, [dispatch])
+    dispatch(getBillList());
+
+    //define updateViewport function to set the window size the same as mobile
+    const updateViewport = () => {
+      const metaViewport = document.querySelector('meta[name="viewport"]');
+
+      if (window.innerWidth > 768) { 
+        metaViewport?.setAttribute("content", "width=375, initial-scale=1");
+      } else {
+        metaViewport?.setAttribute("content", "width=device-width, initial-scale=1");
+      }
+    };
+
+    updateViewport(); 
+    window.addEventListener("resize", updateViewport); 
+
+    return () => {
+      window.removeEventListener("resize", updateViewport); 
+    };
+  }, [dispatch]); 
+
   //Route switch and tab bar activation
   const navigate = useNavigate()
   const location = useLocation()
