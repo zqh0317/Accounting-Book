@@ -101,7 +101,7 @@
 This project is an **independently developed bookkeeping web application**, providing categorized expense tracking and financial statistics.
 
 ## 🎬 Online Demo  
-👉 [Click here to try it out](http://bill-pearl.vercel.app)
+👉 [Click here to try](http://bill-pearl.vercel.app)
 
 ## 📌 Project Background & Goals  
 In an economic downturn with rising prices, more people seek to manage their finances through bookkeeping.
@@ -198,7 +198,7 @@ I independently completed **requirement analysis, UI design, and frontend develo
 这个项目是我独立开发的记账本web application，提供分类记账和数据统计服务。
 
 ## 🎬 线上demo
-👉 【点击这里体验】http://bill-pearl.vercel.app
+👉 【点击这里体验】(http://bill-pearl.vercel.app)
 
 ## 📌 项目背景 & 目标
 经济低迷，物价持续上涨的大环境下，越来越多人产生了通过记账来管理财务的需求。 
