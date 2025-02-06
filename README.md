@@ -1,4 +1,4 @@
-# 日本語の紹介 [English version follows after Japanese] 【中文版请拉至最后】  
+# 日本語の紹介 [English version follows after Japanese] 【中文版请拉至最后】
 # 📒 家計簿（React）
 
 👋 こんにちは、私は鄭綺慧（ジェン・チフイ）です。React エコシステムを専門とするフロントエンド開発者で、効率的で保守しやすいフロントエンドアプリの構築に注力しています。  
