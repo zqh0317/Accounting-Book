@@ -1,7 +1,204 @@
+# 日本語の紹介 [English version follows after Japanese] 【中文版请拉至最后】
+# 📒 家計簿（React）
+
+👋 こんにちは、私は鄭綺慧（ジェン・チフイ）です。React エコシステムを専門とするフロントエンド開発者で、効率的で保守しやすいフロントエンドアプリの構築に注力しています。  
+このプロジェクトは、**私が独自に開発した家計簿Webアプリ**であり、支出の分類記録とデータ統計機能を提供します。
+
+## 🎬 オンラインデモ  
+👉 [こちらをクリックして体験](http://bill-pearl.vercel.app)
+
+## 📌 プロジェクトの背景 & 目標  
+経済の低迷や物価の上昇が続く中、多くの人が家計簿をつけて財務管理をするニーズを持つようになりました。
+
+このプロジェクトの主な目標:  
+- ✅ **細かい支出カテゴリ** により、異なるユーザーのニーズに対応  
+- ✅ **年間および月間の収支統計** を提供し、一定期間の財務状況を把握しやすくする  
+- ✅ **月間レポートでは詳細な支出記録を表示** し、振り返りをしやすくする  
+
+私は、**要件分析、UIデザイン、フロントエンド開発** を独自に行い、**Redux を使用した状態管理**、および **JSON Server によるデータシミュレーション** を実装しました。
+
+## 📈 画面スクリーンショット & 使用方法  
+
+### 収入・支出を追加  
+<img src="https://github.com/user-attachments/assets/e2d27726-14b5-4d2f-a9cb-e41c7f1cad13" width="400">
+
+### 月間レポート  
+<img src="https://github.com/user-attachments/assets/a0198723-43f7-477b-bbc6-bab1657dcdf1" width="400">
+
+### 年間レポート  
+<img src="https://github.com/user-attachments/assets/8675a10d-9a8d-4a83-8d14-597bebb04bbc" width="400">
+
+### 使い方  
+1️⃣ **収入・支出を追加**: ホーム画面下部のタブバー中央のボタンをクリックし、収入・支出追加画面へ移動。カテゴリを選択し、日付を設定、金額を入力して **SAVE** を押して保存  
+2️⃣ **月間レポートを確認**: ホーム画面ではデフォルトで **月間レポート** が表示されます。タブバーの **左ボタン** を押して月間レポート画面へ移動し、月を選択して収支状況を確認。日ごとの支出項目の **右矢印** を押すと、詳細な取引内容が展開表示されます  
+3️⃣ **年間レポートを確認**: タブバーの **右ボタン** を押して **年間レポート画面** に移動し、年を選択すると該当年の収支統計を確認できます  
+
+## 🛠️ 技術スタック  
+
+| 技術 | 説明 |
+|------|------|
+| ⚛️ React 18 | コンポーネントベースのフロントエンドフレームワークで、コードの保守性を向上 |
+| 🎨 Sass | UI スタイリングのためのプリプロセッサで、変数やモジュール管理が可能 |
+| 🌐 React Router | ルーティング管理を行い、スムーズなページ遷移を実現 |
+| 🛜 Redux | グローバル状態管理を実装し、props のネストを回避 |
+| 🌃 Ant Design Mobile | UI コンポーネント（日時選択、ナビゲーションなど）を活用し、開発効率とUXを向上 |
+| 🚀 CRA | Create React App により、React プロジェクトを素早く構築 |
+| ⌚️ Day.js | 日付のフォーマットや計算などをサポートするライブラリ |
+| 🔧 Classnames | 動的なクラス名の管理を簡単にするユーティリティ |
+| 🔄 Lodash | データ処理ライブラリで、支出のグループ化や統計計算を効率化 |
+| 🗄 JSON Server | ローカルデータシミュレーションにより RESTful API を提供し、フロントエンド・バックエンド分離開発をサポート |
+
+## 💡 特徴  
+
+### 🏗️ コンポーネントベースの設計 & パフォーマンス最適化  
+- **React のコンポーネント化開発** を採用し、コードの分離と再利用性を向上  
+- **Sass のプリプロセッサ** を活用し、**変数やモジュール化** によりスタイルの一貫性を確保し、保守性を向上  
+- **Redux によるグローバル状態管理** で、不要な API リクエストを減らし、パフォーマンスを向上  
+
+### 🔧 効率的な開発 & 拡張性の高さ  
+- 📊 現在は **JSON Server を使用したモックデータ** により、バックエンド API をシミュレーション  
+- 🚀 今後は **Supabase や MongoDB などのリアルなデータベースへ移行可能**  
+
+### ✨ UI & インタラクションの最適化  
+- 🎨 **Ant Design Mobile のコンポーネント**（日時選択、タブバーなど）を活用し、開発効率とモバイルUXを向上  
+
+## 📂 プロジェクト構成  
+
+```bash
+┣ 📂server
+   ┣ 📜 data.json                    # モックデータ（バックエンドAPI用）
+┣ 📂 src
+   ┣ 📂 components                   # 再利用可能なコンポーネント
+      ┣ 📜 Icon.js                   # 支出カテゴリのアイコン           
+   ┣ 📂 pages                        # ページ単位のコンポーネント
+      ┣ 📂 Layout                    # メインレイアウト（タブバーなど）
+      ┣ 📂 Month                     # 月間レポートページ
+         ┣ 📂 components/DailyBill   # 日ごとの支出コンポーネント
+         ┣ 📜 index.js               # 月間レポートの概要
+         ┣ 📜 index.scss             # 月間レポートのスタイル
+      ┣ 📂 New                       # 支出追加ページ
+      ┣ 📂 Year                      # 年間レポートページ
+         ┣ 📂 components/MonthlyBill # 月間サマリーコンポーネント
+         ┣ 📜 index.js               # 年間レポートの概要
+         ┣ 📜 index.scss             # 年間レポートのスタイル
+   ┣ 📂 router                       # ルーティング設定
+   ┣ 📂 store                        # Redux 状態管理
+   ┣ 📂 typelist                     # 支出カテゴリのデータ  
+   ┣ 📜 index.css                    # ベーススタイル（フォント設定など）
+   ┣ 📜 index.js                     # アプリのエントリーポイント
+```
+ ## 📬 Contact
+- 🔗 GitHub: https://github.com/zqh0317?tab=repositories
+- 📧 Email: zhengqihui0317@gmail.com
+- 💼 Linkedin:  https://www.linkedin.com/in/qihui-zheng-ab2618275/
+
+
+   
+# English Version of Project Introduction
+# 📒 Accounting Book (React)
+
+👋 Hi, I'm Qihui Zheng, a frontend developer specializing in the React ecosystem. I focus on building efficient and maintainable frontend applications.  
+This project is an **independently developed bookkeeping web application**, providing categorized expense tracking and financial statistics.
+
+## 🎬 Online Demo  
+👉 [Click here to try it out](http://bill-pearl.vercel.app)
+
+## 📌 Project Background & Goals  
+In an economic downturn with rising prices, more people seek to manage their finances through bookkeeping.
+
+This project's core objectives:  
+- ✅ **Detailed expense categories** to meet different users' personalized needs  
+- ✅ **Annual and monthly summary reports** to help users grasp their financial situation over a period  
+- ✅ **Detailed transaction records in monthly reports**, allowing users to review their spending habits  
+
+I independently completed **requirement analysis, UI design, and frontend development**, using **Redux for state management** and **JSON Server for data simulation**.
+
+## 📈 Screenshots & Usage  
+
+### Add Transaction  
+<img src="https://github.com/user-attachments/assets/e2d27726-14b5-4d2f-a9cb-e41c7f1cad13" width="400">
+
+### Monthly Report  
+<img src="https://github.com/user-attachments/assets/a0198723-43f7-477b-bbc6-bab1657dcdf1" width="400">
+
+### Annual Report  
+<img src="https://github.com/user-attachments/assets/8675a10d-9a8d-4a83-8d14-597bebb04bbc" width="400">
+
+### How to Use  
+1️⃣ **Add a Transaction**: Click the middle button on the bottom tab bar to enter the add transaction page. Select a category, set the date, enter the amount, and click **SAVE** to store the record.  
+2️⃣ **View Monthly Report**: The home page displays the **monthly report** by default. You can also click the **left button** on the bottom tab bar to navigate to the monthly report page. Select a date to view income and expenses for that month. Click the right arrow next to a daily entry to expand detailed transactions.  
+3️⃣ **View Annual Report**: Click the **right button** on the bottom tab bar to access the **annual report** page. Select a year to check your financial summary for that period.  
+
+## 🛠️ Tech Stack  
+
+| Technology | Description |
+|------------|------------|
+| ⚛️ React 18 | Component-based frontend framework, improving code maintainability |
+| 🎨 Sass | UI styling with variables and modular design for reusability |
+| 🌐 React Router | Page navigation management for seamless transitions |
+| 🛜 Redux | Global state management for transaction data, avoiding prop drilling |
+| 🌃 Ant Design Mobile | UI components for date selection, navigation, etc., improving development efficiency and user experience |
+| 🚀 CRA | Create React App for quick project setup |
+| ⌚️ Day.js | Date processing library supporting formatting, calculations, and more |
+| 🔧 Classnames | Utility for managing dynamic class names in components |
+| 🔄 Lodash | Data processing library for efficient transaction grouping and statistics calculations |
+| 🗄 JSON Server | Local data simulation, providing RESTful API support for frontend-backend separation |
+
+## 💡 Highlights  
+
+### 🏗️ Component-Based Architecture & Performance Optimization  
+- Developed with **React componentization**, reducing code coupling and improving reusability  
+- **Sass preprocessing** with **variables and modularization**, ensuring a unified UI style and easier maintenance  
+- Utilized **Redux for global state management**, reducing redundant API calls and improving performance  
+
+### 🔧 Efficient Development & Scalability  
+- 📊 Currently using **JSON Server for mock data**, simulating backend APIs and aligning with modern frontend-backend separation trends  
+- 🚀 Future upgrades can seamlessly migrate to **real databases like Supabase or MongoDB**  
+
+### ✨ UI & Interaction Optimization  
+- 🎨 **Ant Design Mobile components** (date picker, tab bar, etc.) improve development efficiency and mobile user experience  
+
+## 📂 Project Structure  
+
+```bash
+┣ 📂server
+   ┣ 📜 data.json                    # Mock data for backend API
+┣ 📂 src
+   ┣ 📂 components                   # Reusable components
+      ┣ 📜 Icon.js                   # Stores category icons           
+   ┣ 📂 pages                        # Page-level components
+      ┣ 📂 Layout                    # Main layout (tab bar, etc.)
+      ┣ 📂 Month                     # Monthly report page
+         ┣ 📂 components/DailyBill   # Daily transaction component
+         ┣ 📜 index.js               # Monthly summary component
+         ┣ 📜 index.scss             # Styles for monthly summary
+      ┣ 📂 New                       # Add transaction page
+      ┣ 📂 Year                      # Annual report page
+         ┣ 📂 components/MonthlyBill # Monthly summary component
+         ┣ 📜 index.js               # Annual summary component
+         ┣ 📜 index.scss             # Styles for annual summary
+   ┣ 📂 router                       # Routing configuration
+   ┣ 📂 store                        # Redux state management
+   ┣ 📂 typelist                     # Mapping of transaction categories to names  
+   ┣ 📜 index.css                    # Base styles (fonts, etc.)
+   ┣ 📜 index.js                     # Application entry point
+```
+
+## 📬 Contact
+- 🔗 GitHub: https://github.com/zqh0317?tab=repositories
+- 📧 Email: zhengqihui0317@gmail.com
+- 💼 Linkedin:  https://www.linkedin.com/in/qihui-zheng-ab2618275/
+
+
+
+# 中文版项目简介
 # 📒 记账本（react）
 
 👋 你好，我是郑绮慧，一名前端开发者，专注于 React 生态，擅长构建高效、可维护的前端应用。
 这个项目是我独立开发的记账本web application，提供分类记账和数据统计服务。
+
+## 🎬 线上demo
+👉 【点击这里体验】http://bill-pearl.vercel.app
 
 ## 📌 项目背景 & 目标
 经济低迷，物价持续上涨的大环境下，越来越多人产生了通过记账来管理财务的需求。 
@@ -56,38 +253,35 @@
 ### ✨ UI & 交互优化
 - 🎨 **使用ant design mobile**提供的时间选择器和tab bar等组件，提高开发效率，并改善移动端用户体验
 
-## 🎬 线上demo
-👉 【点击这里体验】（url之后补充）
-
 ## 📂 代码结构
 ```bash
 ┣ 📂server
-   ┣ 📜 data.json                 # 数据模拟，提供后端接口
+   ┣ 📜 data.json                    # 数据模拟，提供后端接口
 ┣ 📂 src
- ┣ 📂 components                  # 可复用组件
-    ┣ 📜 Icon.js                  # 存储账目类别图标           
- ┣ 📂 pages                       # 页面级组件
-    ┣ 📂 Layout                   # 主界面（tab bar等）
-    ┣ 📂 Month                    # 月度账单界面
-      ┣ 📂 components/DailyBill   # 日账单组件
-      ┣ 📜 index.js               # 月度汇总组件
-      ┣ 📜 index.scss             # 月度汇总组件样式
-    ┣ 📂 New                      # 新增账单界面
-    ┣ 📂 Year                     # 年度账单界面
-      ┣ 📂 components/MonthlyBill # 月账单组件
-      ┣ 📜 index.js               # 年度汇总组件
-      ┣ 📜 index.scss             # 年度汇总组件样式
- ┣ 📂 router                      # 路由配置
- ┣ 📂 store                       # redux状态管理
- ┣ 📂 typelist                    # 账目类别与名称对应数据  
- ┣ 📜 index.css                   # 字体等基础设置
- ┣ 📜 index.js                    # 路由配置  
+   ┣ 📂 components                   # 可复用组件
+      ┣ 📜 Icon.js                   # 存储账目类别图标           
+   ┣ 📂 pages                        # 页面级组件
+      ┣ 📂 Layout                    # 主界面（tab bar等）
+      ┣ 📂 Month                     # 月度账单界面
+         ┣ 📂 components/DailyBill   # 日账单组件
+         ┣ 📜 index.js               # 月度汇总组件
+         ┣ 📜 index.scss             # 月度汇总组件样式
+      ┣ 📂 New                       # 新增账单界面
+      ┣ 📂 Year                      # 年度账单界面
+         ┣ 📂 components/MonthlyBill # 月账单组件
+         ┣ 📜 index.js               # 年度汇总组件
+         ┣ 📜 index.scss             # 年度汇总组件样式
+   ┣ 📂 router                       # 路由配置
+   ┣ 📂 store                        # redux状态管理
+   ┣ 📂 typelist                     # 账目类别与名称对应数据  
+   ┣ 📜 index.css                    # 字体等基础设置
+   ┣ 📜 index.js                     # 路由配置  
 ```   
 
  ## 📬 联系方式
 - 🔗 GitHub: https://github.com/zqh0317?tab=repositories
 - 📧 Email: zhengqihui0317@gmail.com
-- 💼 Linkedin:
+- 💼 Linkedin:  https://www.linkedin.com/in/qihui-zheng-ab2618275/
 
 
 
