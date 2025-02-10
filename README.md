@@ -95,7 +95,7 @@
 
    
 # English Version of Project Introduction
-# 📒 Accounting Book (React)
+# 📒 Financial Tracker (React)
 
 👋 Hi, I'm Qihui Zheng, a frontend developer specializing in the React ecosystem. I focus on building efficient and maintainable frontend applications.  
 This project is an **independently developed bookkeeping web application**, providing categorized expense tracking and financial statistics.
