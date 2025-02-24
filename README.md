@@ -37,16 +37,16 @@
 
 | 技術 | 説明 |
 |------|------|
-| ⚛️ React 18 | コンポーネントベースのフロントエンドフレームワークで、コードの保守性を向上 |
-| 🎨 Sass | UI スタイリングのためのプリプロセッサで、変数やモジュール管理が可能 |
-| 🌐 React Router | ルーティング管理を行い、スムーズなページ遷移を実現 |
-| 🛜 Redux | グローバル状態管理を実装し、props のネストを回避 |
-| 🌃 Ant Design Mobile | UI コンポーネント（日時選択、ナビゲーションなど）を活用し、開発効率とUXを向上 |
-| 🚀 CRA | Create React App により、React プロジェクトを素早く構築 |
-| ⌚️ Day.js | 日付のフォーマットや計算などをサポートするライブラリ |
-| 🔧 Classnames | 動的なクラス名の管理を簡単にするユーティリティ |
-| 🔄 Lodash | データ処理ライブラリで、支出のグループ化や統計計算を効率化 |
-| 🗄 JSON Server | ローカルデータシミュレーションにより RESTful API を提供し、フロントエンド・バックエンド分離開発をサポート |
+| React 18 | コンポーネントベースのフロントエンドフレームワークで、コードの保守性を向上 |
+| Sass | UI スタイリングのためのプリプロセッサで、変数やモジュール管理が可能 |
+| React Router | ルーティング管理を行い、スムーズなページ遷移を実現 |
+| Redux | グローバル状態管理を実装し、props のネストを回避 |
+| Ant Design Mobile | UI コンポーネント（日時選択、ナビゲーションなど）を活用し、開発効率とUXを向上 |
+| CRA | Create React App により、React プロジェクトを素早く構築 |
+| Day.js | 日付のフォーマットや計算などをサポートするライブラリ |
+| Classnames | 動的なクラス名の管理を簡単にするユーティリティ |
+| Lodash | データ処理ライブラリで、支出のグループ化や統計計算を効率化 |
+| JSON Server | ローカルデータシミュレーションにより RESTful API を提供し、フロントエンド・バックエンド分離開発をサポート |
 
 ## 💡 特徴  
 
@@ -133,16 +133,16 @@ I independently completed **requirement analysis, UI design, and frontend develo
 
 | Technology | Description |
 |------------|------------|
-| ⚛️ React 18 | Component-based frontend framework, improving code maintainability |
-| 🎨 Sass | UI styling with variables and modular design for reusability |
-| 🌐 React Router | Page navigation management for seamless transitions |
-| 🛜 Redux | Global state management for transaction data, avoiding prop drilling |
-| 🌃 Ant Design Mobile | UI components for date selection, navigation, etc., improving development efficiency and user experience |
-| 🚀 CRA | Create React App for quick project setup |
-| ⌚️ Day.js | Date processing library supporting formatting, calculations, and more |
-| 🔧 Classnames | Utility for managing dynamic class names in components |
-| 🔄 Lodash | Data processing library for efficient transaction grouping and statistics calculations |
-| 🗄 JSON Server | Local data simulation, providing RESTful API support for frontend-backend separation |
+| React 18 | Component-based frontend framework, improving code maintainability |
+| Sass | UI styling with variables and modular design for reusability |
+| React Router | Page navigation management for seamless transitions |
+| Redux | Global state management for transaction data, avoiding prop drilling |
+| Ant Design Mobile | UI components for date selection, navigation, etc., improving development efficiency and user experience |
+| CRA | Create React App for quick project setup |
+| Day.js | Date processing library supporting formatting, calculations, and more |
+| Classnames | Utility for managing dynamic class names in components |
+| Lodash | Data processing library for efficient transaction grouping and statistics calculations |
+| JSON Server | Local data simulation, providing RESTful API support for frontend-backend separation |
 
 ## 💡 Highlights  
 
@@ -229,16 +229,16 @@ I independently completed **requirement analysis, UI design, and frontend develo
 ## 🛠️ 技术栈
 | 技术 | 说明 |
 |------|------|
-| ⚛️ React 18 | 组件化前端框架，提高代码可维护性 |
-| 🎨 Sass | 负责 UI 设计，提高样式复用性 |
-| 🌐 React Router | 页面路由管理，实现无刷新跳转 |
-| 🛜 redux | 状态管理，用于全局管理账单数据，避免props层层传递 |
-| 🌃 ant design mobile | 提供日期选择、导航栏等 UI 组件，高效开发的同时提升用户体验 |
-| 🚀 CRA | Create React App，快速搭建 React 项目 |
-| ⌚️ dayjs | 时间处理库，支持日期格式化、计算等功能 |
-| 🔧 classnames | 类名处理库，更方便地通过添加多个类名实现交互逻辑和样式控制 |
-| 🔄 lodash | 数据处理库，用于高效处理账单分组和计算账单统计数据 |
-| 🗄 JSON Server | 本地数据模拟，支持 RESTful API，方便前后端分离开发 |
+| React 18 | 组件化前端框架，提高代码可维护性 |
+| Sass | 负责 UI 设计，提高样式复用性 |
+| React Router | 页面路由管理，实现无刷新跳转 |
+| redux | 状态管理，用于全局管理账单数据，避免props层层传递 |
+| ant design mobile | 提供日期选择、导航栏等 UI 组件，高效开发的同时提升用户体验 |
+| CRA | Create React App，快速搭建 React 项目 |
+| dayjs | 时间处理库，支持日期格式化、计算等功能 |
+| classnames | 类名处理库，更方便地通过添加多个类名实现交互逻辑和样式控制 |
+| lodash | 数据处理库，用于高效处理账单分组和计算账单统计数据 |
+| JSON Server | 本地数据模拟，支持 RESTful API，方便前后端分离开发 |
 
 ## 💡 亮点
 
